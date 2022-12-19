@@ -170,4 +170,5 @@ def contact():
                           )
     return render_template("contact.html", parameters = parameters)
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=False, host='0.0.0.0')
