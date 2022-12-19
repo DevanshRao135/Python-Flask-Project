@@ -1,0 +1,18 @@
+{
+  "parameters" :
+  {
+    "local_server" : "True",
+    "local_uri" : "mysql://root:@localhost/my coding blog",
+    "production_uri" : "mysql://root:@localhost/my coding blog",
+    "fb_url" : "https://www.linkedin.com/in/devansh-rao-907745174",
+    "tw_url" : "https://mobile.twitter.com/DevanshRao18",
+    "gh_url" : "https://github.com/DevanshRao135",
+    "gmail-user":"devanshrao285@gmail.com",
+    "gmail-password":"sdrzdbmjyfnomfsu",
+    "about_text" : "Hi my name is Devansh and I Love doing programming and want to be a software developer.",
+    "no_of_posts" : 2,
+    "username" : "Devansh",
+    "password" : "Deva@1234",
+    "upload_location" : "C:\\Users\\devan\\PycharmProjects\\pythonProject\\firstprog\\static\\assets\\AdminUpload"
+  }
+}
