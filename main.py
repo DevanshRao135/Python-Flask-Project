@@ -5,6 +5,8 @@ from datetime import datetime
 from werkzeug.utils import secure_filename
 import json
 import os, math
+from werkzeug.middleware.proxy_fix import ProxyFix
+
 
 with open('config.json','r') as c:
     parameters = json.load(c)["parameters"]
@@ -19,6 +21,7 @@ app.config.update(MAIL_SERVER = 'smtp.gmail.com',
     MAIL_USERNAME = parameters['gmail-user'],
     MAIL_PASSWORD = parameters['gmail-password']
                   )
+app.wsgi_app = ProxyFix(app.wsgi_app)
 mail = Mail(app)
 
 if(local_server):
